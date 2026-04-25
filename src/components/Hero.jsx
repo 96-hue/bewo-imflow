@@ -9,8 +9,8 @@ function HeroVisual() {
     >
       <defs>
         <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#ECE7DD" />
-          <stop offset="100%" stopColor="#E5ECEA" />
+          <stop offset="0%" stopColor="#F6F2EC" />
+          <stop offset="100%" stopColor="#ECE7DD" />
         </linearGradient>
         <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#1E3F3D" stopOpacity="0.85" />
@@ -22,7 +22,7 @@ function HeroVisual() {
         </linearGradient>
       </defs>
 
-      <rect x="0" y="0" width="480" height="560" rx="8" fill="url(#heroBg)" />
+      <rect x="0" y="0" width="480" height="560" rx="16" fill="url(#heroBg)" />
 
       <g fill="none" strokeLinecap="round">
         <path
@@ -93,53 +93,57 @@ function HeroVisual() {
 
 export function Hero({ onNav }) {
   return (
-    <section className="hero">
-      <div className="hero__grid">
-        <div className="hero__text">
-          <div className="eyebrow hero__eyebrow">Ambulant Betreutes Wohnen · Köln</div>
-          <h1>Begleitung im Alltag — auf Augenhöhe.</h1>
-          <p className="hero__lead">
-            Wir begleiten Erwachsene mit psychischen, geistigen oder mehrfachen Beeinträchtigungen
-            in ihrem Alltag. So viel wie nötig, so wenig wie möglich.
-          </p>
-          <div className="hero__ctas">
-            <a
-              className="btn btn-primary"
-              href="#kontakt"
-              onClick={(e) => { e.preventDefault(); onNav('kontakt') }}
-            >
-              Erstgespräch anfragen <span className="arr">→</span>
-            </a>
-            <a
-              className="btn btn-secondary"
-              href="#leistungen"
-              onClick={(e) => { e.preventDefault(); onNav('leistungen') }}
-            >
-              Wie wir arbeiten
-            </a>
+    <section className="hero hero--dark">
+      <div className="hero__inner">
+        <div className="hero__grid">
+          <div className="hero__text">
+            <div className="eyebrow hero__eyebrow">Ambulant Betreutes Wohnen · Köln</div>
+            <h1 className="hero__title">
+              Begleitung im&nbsp;Alltag <span className="hero__title-accent">— auf Augenhöhe.</span>
+            </h1>
+            <p className="hero__lead">
+              Wir begleiten Erwachsene mit psychischen, geistigen oder mehrfachen Beeinträchtigungen
+              in ihrem Alltag. So viel wie nötig, so wenig wie möglich.
+            </p>
+            <div className="hero__ctas">
+              <a
+                className="btn btn-cream"
+                href="#kontakt"
+                onClick={(e) => { e.preventDefault(); onNav('kontakt') }}
+              >
+                Erstgespräch anfragen <span className="arr">→</span>
+              </a>
+              <a
+                className="btn btn-ghost-light"
+                href="#leistungen"
+                onClick={(e) => { e.preventDefault(); onNav('leistungen') }}
+              >
+                Wie wir arbeiten
+              </a>
+            </div>
+          </div>
+          <div className="hero__visual">
+            <HeroVisual />
           </div>
         </div>
-        <div className="hero__visual">
-          <HeroVisual />
-        </div>
-      </div>
 
-      <div className="hero__meta">
-        <div className="hero__meta-item">
-          <div className="num">2016</div>
-          <div className="lbl">Gegründet in Köln</div>
-        </div>
-        <div className="hero__meta-item">
-          <div className="num">~80</div>
-          <div className="lbl">Klient:innen</div>
-        </div>
-        <div className="hero__meta-item">
-          <div className="num">16</div>
-          <div className="lbl">Mitarbeiter:innen</div>
-        </div>
-        <div className="hero__meta-item">
-          <div className="num">2</div>
-          <div className="lbl">Teams · Ost / West</div>
+        <div className="hero__meta">
+          <div className="hero__meta-item">
+            <div className="num">2016</div>
+            <div className="lbl">Gegründet in Köln</div>
+          </div>
+          <div className="hero__meta-item">
+            <div className="num">~80</div>
+            <div className="lbl">Klient:innen</div>
+          </div>
+          <div className="hero__meta-item">
+            <div className="num">16</div>
+            <div className="lbl">Mitarbeiter:innen</div>
+          </div>
+          <div className="hero__meta-item">
+            <div className="num">2</div>
+            <div className="lbl">Teams in Köln</div>
+          </div>
         </div>
       </div>
     </section>
