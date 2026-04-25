@@ -1,67 +1,62 @@
 /* =============================================================
    BeWo imflow — Design Tokens
-   Colors, type, spacing, radii, shadows.
+   Superhuman-inspired palette: Mysteria Purple, Warm Cream,
+   Lavender Glow, Charcoal Ink, Parchment Border.
    ============================================================= */
 
-/* -------- Fonts -------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap");
 
 :root {
-  /* =========================================================
-     COLOR — Primary palette: "Strom" (chosen)
-     Warm sandstone paper, deep petrol/slate primary,
-     calm sage accent, warm terracotta as rare secondary.
-     Print- and screen-safe, WCAG AA.
-     ========================================================= */
-
-  /* Neutrals — warm sandstone paper, warm greys */
-  --bw-paper:        #F6F2EC;  /* page background, warm sandstone */
-  --bw-paper-2:      #ECE7DD;  /* secondary surface */
-  --bw-line:         #DAD3C4;  /* hairline / divider */
-  --bw-line-strong:  #B5AD9C;  /* stronger border */
-  --bw-mute:         #8A8474;  /* tertiary text */
-  --bw-ink-2:        #4C5352;  /* secondary text (warm slate) */
-  --bw-ink:          #2A2A28;  /* primary text */
+  /* Neutrals — pure white canvas, charcoal ink */
+  --bw-paper:        #FFFFFF;
+  --bw-paper-2:      #F8F6F3;
+  --bw-line:         #DCD7D3;
+  --bw-line-strong:  #C2BCB6;
+  --bw-mute:         #6E6967;
+  --bw-ink-2:        #524F4D;
+  --bw-ink:          #292827;
   --bw-white:        #FFFFFF;
 
-  /* Brand — deep petrol/slate-teal ("Strom") */
-  --bw-strom-900:    #12302E;
-  --bw-strom-800:    #1E3F3D;  /* primary brand — petrol */
-  --bw-strom-700:    #2B524F;
-  --bw-strom-600:    #3C6663;
-  --bw-strom-500:    #5A8380;  /* hover / lighter petrol */
-  --bw-strom-100:    #D4DEDC;  /* tinted backgrounds */
-  --bw-strom-50:     #E5ECEA;
+  /* Brand — Mysteria Purple */
+  --bw-strom-900:    #0F0D26;
+  --bw-strom-800:    #1B1938;
+  --bw-strom-700:    #2A2756;
+  --bw-strom-600:    #3A3570;
+  --bw-strom-500:    #4D4691;
+  --bw-strom-100:    #E5E0F4;
+  --bw-strom-50:     #F2EFFA;
 
-  /* Accent — calm sage ("Ufer") */
-  --bw-ufer-700:     #6A7A4A;
-  --bw-ufer-600:     #82935F;  /* primary accent (sage) */
-  --bw-ufer-500:     #A5B387;
-  --bw-ufer-100:     #DFE5CE;
-  --bw-ufer-50:      #EBEFDD;
+  /* Accent — Lavender Glow + Amethyst Link */
+  --bw-ufer-700:     #5C3D9A;
+  --bw-ufer-600:     #714CB6;
+  --bw-ufer-500:     #9A7EE3;
+  --bw-ufer-100:     #E5DAFC;
+  --bw-ufer-50:      #CBB7FB;
 
-  /* Warm secondary — terracotta ("Ziegel"), used VERY sparingly */
-  --bw-ziegel-700:   #8C4A36;
-  --bw-ziegel-600:   #A45A44;
-  --bw-ziegel-100:   #EFD9CF;
+  /* Warm Cream — signature CTA */
+  --bw-cream:        #E9E5DD;
+  --bw-cream-hover:  #F2EEE5;
+
+  /* Aliases */
+  --bw-ziegel-700:   #5C3D9A;
+  --bw-ziegel-600:   #714CB6;
+  --bw-ziegel-100:   #E5DAFC;
 
   /* Semantic */
-  --bw-ok:           #4A7A4F;
-  --bw-ok-bg:        #DFE8D6;
-  --bw-warn:         #9A6B1E;
+  --bw-ok:           #3F7A4F;
+  --bw-ok-bg:        #DDE8D6;
+  --bw-warn:         #8A6018;
   --bw-warn-bg:      #F1DDBD;
   --bw-error:        #8A3A2F;
   --bw-error-bg:     #F0D4C9;
-  --bw-info:         var(--bw-strom-700);
-  --bw-info-bg:      var(--bw-strom-100);
+  --bw-info:         var(--bw-ufer-600);
+  --bw-info-bg:      var(--bw-ufer-100);
 
   /* Focus */
-  --bw-focus:        #B57A2A; /* warm amber, AA contrast on paper */
-  --bw-focus-ring:   0 0 0 3px rgba(181, 122, 42, 0.40);
+  --bw-focus:        var(--bw-ufer-600);
+  --bw-focus-ring:   0 0 0 3px rgba(113, 76, 182, 0.35);
 
-  /* =========================================================
-     SEMANTIC TOKENS (use these in product code)
-     ========================================================= */
+  /* Semantic tokens */
   --color-bg:           var(--bw-paper);
   --color-bg-elev:      var(--bw-white);
   --color-bg-sunken:    var(--bw-paper-2);
@@ -79,43 +74,40 @@
   --color-accent:       var(--bw-strom-800);
   --color-accent-hover: var(--bw-strom-700);
   --color-accent-press: var(--bw-strom-900);
-  --color-link:         var(--bw-strom-700);
-  --color-link-hover:   var(--bw-strom-900);
+  --color-link:         var(--bw-ufer-600);
+  --color-link-hover:   var(--bw-ufer-700);
 
-  /* =========================================================
-     TYPE
-     Inter for UI/body (open source, excellent ä/ö/ü/ß/Eszett)
-     Source Serif 4 as quiet editorial accent for headlines
-     ========================================================= */
+  /* Typography */
   --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  /* Type scale — modest, generous leading for long-form German */
   --fs-12: 0.75rem;
   --fs-14: 0.875rem;
   --fs-16: 1rem;
   --fs-18: 1.125rem;
   --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
   --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
   --fs-30: 1.875rem;
   --fs-36: 2.25rem;
   --fs-48: 3rem;
   --fs-60: 3.75rem;
+  --fs-64: 4rem;
 
-  --lh-tight:  1.15;
-  --lh-snug:   1.3;
-  --lh-normal: 1.55;
-  --lh-loose:  1.7;
+  --lh-display: 0.96;
+  --lh-tight:   1.10;
+  --lh-snug:    1.25;
+  --lh-normal:  1.50;
+  --lh-loose:   1.65;
 
-  --tracking-tight:  -0.015em;
-  --tracking-normal: 0;
-  --tracking-wide:   0.04em;
-  --tracking-caps:   0.08em;
+  --tracking-display: -0.022em;
+  --tracking-tight:   -0.012em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.04em;
+  --tracking-caps:     0.08em;
 
-  /* =========================================================
-     SPACING — 4px base
-     ========================================================= */
   --sp-1:  4px;
   --sp-2:  8px;
   --sp-3:  12px;
@@ -130,32 +122,25 @@
   --sp-24: 96px;
   --sp-32: 128px;
 
-  /* =========================================================
-     RADII — restrained. Cards 4px, pills 999.
-     ========================================================= */
-  --radius-1: 2px;
-  --radius-2: 4px;
+  /* Radii — binary 8px / 16px */
+  --radius-1: 8px;
+  --radius-2: 8px;
   --radius-3: 8px;
-  --radius-4: 12px;
+  --radius-4: 16px;
   --radius-pill: 999px;
 
-  /* =========================================================
-     SHADOWS — subtle, warm-toned
-     ========================================================= */
-  --shadow-1: 0 1px 2px rgba(43, 42, 34, 0.07), 0 1px 1px rgba(43, 42, 34, 0.05);
-  --shadow-2: 0 2px 6px rgba(43, 42, 34, 0.08), 0 1px 2px rgba(43, 42, 34, 0.05);
-  --shadow-3: 0 8px 24px rgba(43, 42, 34, 0.10), 0 2px 6px rgba(43, 42, 34, 0.06);
+  /* Shadows */
+  --shadow-1: 0 1px 2px rgba(41, 40, 39, 0.05);
+  --shadow-2: 0 2px 8px rgba(41, 40, 39, 0.08);
+  --shadow-3: 0 12px 32px rgba(41, 40, 39, 0.12), 0 2px 6px rgba(41, 40, 39, 0.06);
+  --shadow-hero: 0 24px 64px rgba(15, 13, 38, 0.32), 0 4px 12px rgba(15, 13, 38, 0.18);
   --shadow-inset: inset 0 0 0 1px var(--bw-line);
 
-  /* Layout */
-  --container-max: 1140px;
+  --container-max: 1200px;
   --container-prose: 680px;
   --container-narrow: 520px;
 }
 
-/* =============================================================
-   BASE / SEMANTIC ELEMENTS
-   ============================================================= */
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -164,12 +149,11 @@ body {
   font-family: var(--font-sans);
   font-size: var(--fs-16);
   line-height: var(--lh-normal);
-  font-feature-settings: "ss01", "cv11"; /* Inter: humanist 'a', friendlier 'l' */
+  font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-/* Headlines — Inter for hard-working UI; Source Serif on dedicated editorial moments via .h-serif */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 var(--sp-4) 0;
   color: var(--color-fg);
@@ -178,20 +162,29 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--lh-tight);
   text-wrap: balance;
 }
-h1 { font-size: var(--fs-48); font-weight: 600; }
-h2 { font-size: var(--fs-36); }
-h3 { font-size: var(--fs-24); font-weight: 600; }
+h1 {
+  font-size: var(--fs-60);
+  font-weight: 600;
+  line-height: var(--lh-display);
+  letter-spacing: var(--tracking-display);
+}
+h2 {
+  font-size: var(--fs-48);
+  font-weight: 500;
+  line-height: var(--lh-display);
+  letter-spacing: var(--tracking-display);
+}
+h3 { font-size: var(--fs-24); font-weight: 600; line-height: 1.2; }
 h4 { font-size: var(--fs-20); font-weight: 600; letter-spacing: 0; }
 h5 { font-size: var(--fs-16); font-weight: 600; letter-spacing: 0; }
 h6 {
   font-size: var(--fs-12);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
   color: var(--color-fg-mute);
 }
 
-/* Editorial / quiet accent variant for headlines */
 .h-serif {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -200,7 +193,7 @@ h6 {
 
 p {
   margin: 0 0 var(--sp-4) 0;
-  line-height: var(--lh-loose); /* generous leading for long German texts */
+  line-height: var(--lh-normal);
   text-wrap: pretty;
   max-width: var(--container-prose);
 }
@@ -212,7 +205,7 @@ p {
 small, .small { font-size: var(--fs-14); color: var(--color-fg-2); }
 .eyebrow {
   font-size: var(--fs-12);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
   color: var(--color-fg-mute);
@@ -222,15 +215,15 @@ a {
   color: var(--color-link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  text-decoration-color: color-mix(in srgb, var(--color-link) 40%, transparent);
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--color-link) 50%, transparent);
   transition: color 120ms ease, text-decoration-color 120ms ease;
 }
 a:hover { color: var(--color-link-hover); text-decoration-color: currentColor; }
 a:focus-visible {
   outline: none;
   box-shadow: var(--bw-focus-ring);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 hr {
@@ -239,4 +232,4 @@ hr {
   margin: var(--sp-8) 0;
 }
 
-::selection { background: var(--bw-strom-100); color: var(--bw-strom-900); }
+::selection { background: var(--bw-ufer-100); color: var(--bw-strom-900); }

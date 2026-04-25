@@ -9,16 +9,16 @@ function HeroVisual() {
     >
       <defs>
         <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#F6F2EC" />
-          <stop offset="100%" stopColor="#ECE7DD" />
+          <stop offset="0%" stopColor="#FFFFFF" />
+          <stop offset="100%" stopColor="#F8F6F3" />
         </linearGradient>
         <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#1E3F3D" stopOpacity="0.85" />
-          <stop offset="100%" stopColor="#1E3F3D" stopOpacity="0.15" />
+          <stop offset="0%" stopColor="#1B1938" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#1B1938" stopOpacity="0.15" />
         </linearGradient>
         <linearGradient id="fadeLeft" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#82935F" stopOpacity="0.2" />
-          <stop offset="100%" stopColor="#82935F" stopOpacity="0.85" />
+          <stop offset="0%" stopColor="#CBB7FB" stopOpacity="0.2" />
+          <stop offset="100%" stopColor="#714CB6" stopOpacity="0.85" />
         </linearGradient>
       </defs>
 
@@ -32,7 +32,7 @@ function HeroVisual() {
         />
         <path
           d="M-20 248 C 80 188, 180 188, 280 248 S 480 308, 580 248"
-          stroke="#1E3F3D"
+          stroke="#1B1938"
           strokeWidth="1.8"
           strokeOpacity="0.45"
         />
@@ -43,13 +43,13 @@ function HeroVisual() {
         />
         <path
           d="M-20 344 C 80 284, 180 284, 280 344 S 480 404, 580 344"
-          stroke="#82935F"
+          stroke="#CBB7FB"
           strokeWidth="1.5"
-          strokeOpacity="0.35"
+          strokeOpacity="0.7"
         />
         <path
           d="M-20 392 C 80 332, 180 332, 280 392 S 480 452, 580 392"
-          stroke="#1E3F3D"
+          stroke="#1B1938"
           strokeWidth="1.2"
           strokeOpacity="0.18"
         />
@@ -60,30 +60,30 @@ function HeroVisual() {
         y1="120"
         x2="440"
         y2="120"
-        stroke="#1E3F3D"
+        stroke="#1B1938"
         strokeOpacity="0.12"
         strokeWidth="1"
       />
 
       <g>
-        <circle cx="80" cy="80" r="3" fill="#82935F" />
-        <circle cx="400" cy="84" r="2.5" fill="#1E3F3D" opacity="0.4" />
-        <circle cx="240" cy="92" r="2" fill="#1E3F3D" opacity="0.25" />
+        <circle cx="80" cy="80" r="3" fill="#CBB7FB" />
+        <circle cx="400" cy="84" r="2.5" fill="#1B1938" opacity="0.4" />
+        <circle cx="240" cy="92" r="2" fill="#1B1938" opacity="0.25" />
       </g>
 
       <g
         transform="translate(40, 484)"
         fontFamily="Source Serif 4, Georgia, serif"
-        fill="#4C5352"
+        fill="#524F4D"
       >
         <text fontSize="14" fontStyle="italic">im flow</text>
-        <text x="0" y="22" fontSize="11" fill="#8A8474" letterSpacing="0.06em">
+        <text x="0" y="22" fontSize="11" fill="#6E6967" letterSpacing="0.06em">
           Begleitung · Bewegung · Kontinuität
         </text>
       </g>
 
       <g transform="translate(440, 484)" textAnchor="end">
-        <text fontFamily="Inter, sans-serif" fontSize="10" fill="#8A8474" letterSpacing="0.12em">
+        <text fontFamily="Inter, sans-serif" fontSize="10" fill="#6E6967" letterSpacing="0.12em">
           KÖLN · SEIT 2016
         </text>
       </g>
