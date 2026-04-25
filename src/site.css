@@ -13,12 +13,16 @@
 .site-header__cta { display: flex; gap: 12px; align-items: center; }
 
 /* Hero */
-.hero { padding: 88px 32px 96px; max-width: 1140px; margin: 0 auto; }
+.hero { padding: 80px 32px 96px; max-width: 1140px; margin: 0 auto; }
+.hero__grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; }
+.hero__text { min-width: 0; }
 .hero__eyebrow { color: var(--bw-strom-700); margin-bottom: 18px; }
-.hero h1 { font-size: clamp(36px, 5vw, 60px); margin-bottom: 22px; max-width: 16ch; }
-.hero__lead { font-size: 20px; line-height: 1.55; color: var(--bw-ink-2); max-width: 56ch; margin-bottom: 32px; }
+.hero h1 { font-size: clamp(36px, 4.6vw, 56px); margin-bottom: 22px; max-width: 14ch; line-height: 1.1; }
+.hero__lead { font-size: 19px; line-height: 1.6; color: var(--bw-ink-2); max-width: 52ch; margin-bottom: 32px; }
 .hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
-.hero__meta { margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; padding-top: 28px; border-top: 1px solid var(--bw-line); }
+.hero__visual { position: relative; }
+.hero__visual-svg { width: 100%; height: auto; max-height: 560px; display: block; box-shadow: var(--shadow-2); border-radius: 8px; }
+.hero__meta { margin-top: 72px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; padding-top: 28px; border-top: 1px solid var(--bw-line); }
 .hero__meta-item .num { font-size: 32px; font-weight: 600; color: var(--bw-strom-800); letter-spacing: -0.02em; line-height: 1; }
 .hero__meta-item .lbl { font-size: 13px; color: var(--bw-ink-2); margin-top: 6px; }
 
@@ -149,8 +153,10 @@
 @media (max-width: 768px) {
   .site-header__inner { padding: 14px 20px; }
   .site-nav { display: none; }
-  .hero { padding: 56px 20px 64px; }
-  .hero__meta { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hero { padding: 48px 20px 64px; }
+  .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero__visual-svg { max-height: 360px; }
+  .hero__meta { grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
   .section { padding: 56px 20px; }
   .two-col { grid-template-columns: 1fr; gap: 32px; }
   .leistungen { grid-template-columns: 1fr; }
