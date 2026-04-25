@@ -1,7 +1,16 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { Leistungen, UeberUns, Teams, Karriere, CTABlock, Footer } from './components/Sections'
+import {
+  Leistungen,
+  UeberUns,
+  Aufnahme,
+  Qualitaet,
+  Teams,
+  Karriere,
+  CTABlock,
+  Footer,
+} from './components/Sections'
 import { ContactForm } from './components/ContactForm'
 
 export function App() {
@@ -24,6 +33,8 @@ export function App() {
         <Hero onNav={onNav} />
         <Leistungen />
         <UeberUns />
+        <Aufnahme />
+        <Qualitaet />
         <Teams />
         <Karriere />
         <CTABlock onNav={onNav} />

@@ -1,20 +1,39 @@
 export function Leistungen() {
   const items = [
-    { t: 'Alltag strukturieren', d: 'Tagesablauf, Einkäufe, Behördengänge, Termine bei Ärzt:innen oder Therapeut:innen.' },
-    { t: 'Wohnen', d: 'Eigene Wohnung halten, Haushaltsführung, Mietangelegenheiten, Kontakt zur Vermietung.' },
-    { t: 'Soziale Teilhabe', d: 'Kontakt zu Familie und Freund:innen, Freizeit, Vereine, Nachbarschaft.' },
-    { t: 'Gesundheit', d: 'Medikamentenmanagement, Begleitung zu Fachkräften, Krisenkontakte, Klinik‑Übergänge.' },
-    { t: 'Arbeit & Bildung', d: 'Bewerbungen, WfbM, Tagesstruktur, Kontakt zu Reha‑Trägern.' },
-    { t: 'Finanzen', d: 'Anträge, Post, Konto, Schuldenberatung, Zusammenarbeit mit gesetzlichen Betreuer:innen.' },
+    {
+      t: 'Alltag',
+      d: 'Wir helfen bei der Strukturierung des Tages, der Selbstversorgung und der Bewältigung allgemeiner Anforderungen im täglichen Leben.',
+    },
+    {
+      t: 'Wohnen',
+      d: 'Wir unterstützen Sie im Bereich des häuslichen Lebens, damit Sie Ihr Wohnumfeld selbstbestimmt erhalten und gestalten können.',
+    },
+    {
+      t: 'Soziale Teilhabe',
+      d: 'Wir begleiten Sie bei der Freizeitgestaltung, fördern Kommunikation und unterstützen beim Aufbau und der Pflege von Beziehungen.',
+    },
+    {
+      t: 'Gesundheit',
+      d: 'Wir begleiten Sie zuverlässig zu ärztlichen Terminen, Therapeut:innen oder Beratungsstellen — wenn Sie es wünschen.',
+    },
+    {
+      t: 'Arbeit & Bildung',
+      d: 'Wir fördern Sie beim Lernen, bei der Wissensanwendung und bei der Anbindung an tagesstrukturierende oder berufliche Maßnahmen.',
+    },
+    {
+      t: 'Finanzen',
+      d: 'Wir helfen bei administrativen Aufgaben, begleiten zu Behörden und unterstützen bei Anträgen und Einkommensangelegenheiten.',
+    },
   ]
   return (
     <section className="section" id="leistungen">
       <div className="section__inner">
         <div className="section__head">
-          <div className="eyebrow section__eyebrow">Was wir tun</div>
-          <h2>Begleitung in den Bereichen, in denen Sie sie brauchen.</h2>
+          <div className="eyebrow section__eyebrow">Leistungen</div>
+          <h2>Begleitung in neun Lebensbereichen.</h2>
           <p className="section__lead">
-            Welche Hilfen sinnvoll sind, klären wir gemeinsam mit Ihnen — orientiert an Ihren Zielen und am Bedarf.
+            Wir kommen zu Ihnen — aufsuchend, in Ihrer Wohnung oder in Ihrem direkten sozialen Umfeld.
+            Welche Hilfen sinnvoll sind, klären wir gemeinsam, orientiert an Ihren Zielen.
           </p>
         </div>
         <div className="leistungen">
@@ -32,23 +51,127 @@ export function Leistungen() {
 
 export function UeberUns() {
   return (
-    <section className="section section--sunken">
+    <section className="section section--sunken" id="ueberuns">
       <div className="section__inner">
+        <div className="section__head">
+          <div className="eyebrow section__eyebrow">Über uns</div>
+          <h2 className="h-serif">Ruhig. Verlässlich. Professionell.</h2>
+          <p className="section__lead">
+            Unsere Arbeit ist von dem Grundsatz geprägt, dass jeder Mensch Experte für sein eigenes Leben ist.
+            Wir unterstützen ganzheitlich dabei, individuelle Fähigkeiten zu stärken und Hürden im Alltag abzubauen.
+          </p>
+        </div>
         <div className="two-col">
-          <div>
-            <div className="eyebrow section__eyebrow">Über uns</div>
-            <h2 className="h-serif">Ruhig. Verlässlich. Seit 2016.</h2>
-          </div>
-          <div>
-            <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--bw-ink-2)', marginBottom: 16, maxWidth: 'none' }}>
-              BeWo imflow ist ein Anbieter von Ambulant Betreutem Wohnen im Rahmen der Eingliederungshilfe nach SGB&nbsp;IX.
-              Wir arbeiten in zwei regionalen Teams in Köln — links und rechts des Rheins — und kennen die Stadt.
+          <div className="about-block">
+            <h3>Haltung</h3>
+            <p>
+              Wir legen großen Wert auf eine professionelle, wertschätzende und verlässliche Arbeitsbeziehung.
+              Aus Überzeugung sprechen wir unsere Klient:innen grundsätzlich mit „Sie" an — mit dem gebotenen Respekt,
+              auf Augenhöhe.
             </p>
-            <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--bw-ink-2)', maxWidth: 'none' }}>
-              Unsere Begleitung ist fachlich fundiert und persönlich. Wir arbeiten dauerhaft, nicht in Modulen oder Paketen.
-              Wenn Sie uns einmal kennen, bleiben Sie in der Regel bei derselben Bezugsperson.
+            <p>
+              Seit 2016 begleiten wir rund 80 Klient:innen mit psychischen, geistigen oder mehrfachen Beeinträchtigungen
+              in Köln. Mit 16 Mitarbeiter:innen in zwei Teams kennen wir die Stadt und ihre sozialen Strukturen.
             </p>
           </div>
+          <div className="about-block">
+            <h3>Feste Bezugspersonen</h3>
+            <p>
+              Wir wissen, wie wichtig Vertrauen und Beständigkeit sind. Deshalb arbeiten wir nach dem System
+              der festen Bezugsbetreuung: Sie haben eine verlässliche Ansprechperson an Ihrer Seite,
+              die Ihre Situation genau kennt und Sie kontinuierlich begleitet.
+            </p>
+            <p>
+              Unsere Unterstützung orientiert sich an Ihren persönlichen Zielen — die wir gemeinsam mit Ihnen
+              erarbeiten, festhalten und alle sechs Monate gemeinsam überprüfen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function Aufnahme() {
+  const steps = [
+    {
+      n: '01',
+      t: 'Unverbindliche Kontaktaufnahme',
+      d: 'Sie oder Ihre Angehörigen bzw. rechtlichen Betreuer:innen rufen uns an oder schreiben eine E-Mail. Unsere Verwaltung nimmt Ihr Anliegen auf und leitet es direkt an das zuständige Team weiter.',
+    },
+    {
+      n: '02',
+      t: 'Erstes Kennenlernen',
+      d: 'In einem unverbindlichen Gespräch (ca. 45–60 Minuten) lernen wir uns kennen — in unseren Büroräumen, bei Ihnen zu Hause oder auch während eines Klinikaufenthalts. Wir hören zu, klären Ihre Fragen und informieren in Ruhe über unser Angebot.',
+    },
+    {
+      n: '03',
+      t: 'Gemeinsame Planung — wir übernehmen den Papierkram',
+      d: 'Wenn wir uns für eine Zusammenarbeit entscheiden, füllen wir gemeinsam alle notwendigen Unterlagen für den Kostenträger aus. Sie müssen sich nicht allein mit Formularen herumschlagen — unsere Fachkräfte und unsere Verwaltung übernehmen Kommunikation und Versand.',
+    },
+  ]
+  return (
+    <section className="section" id="aufnahme">
+      <div className="section__inner">
+        <div className="section__head">
+          <div className="eyebrow section__eyebrow">Aufnahme</div>
+          <h2>Der Weg zu uns ist einfach.</h2>
+          <p className="section__lead">
+            Wir möchten Ihnen alle administrativen Sorgen abnehmen und begleiten Sie Schritt für Schritt.
+          </p>
+        </div>
+        <div className="aufnahme-steps">
+          {steps.map((s) => (
+            <div className="aufnahme-step" key={s.n}>
+              <div className="aufnahme-step__num">{s.n}</div>
+              <div className="aufnahme-step__body">
+                <h3>{s.t}</h3>
+                <p>{s.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function Qualitaet() {
+  const items = [
+    {
+      t: 'Gewaltschutz & Beschwerdemanagement',
+      d: 'Wir verfügen über ein fest etabliertes Gewaltschutzkonzept sowie ein internes und externes Beschwerdemanagement — klare Ansprechpartner:innen in jeder Lage.',
+    },
+    {
+      t: 'Vier-Augen-Prinzip',
+      d: 'Alle wichtigen Planungen zu Hilfebedarfen werden im Team reflektiert und von einer zweiten Fachkraft geprüft. Das schützt vor blinden Flecken.',
+    },
+    {
+      t: 'Ziel- und Wirkungsüberprüfung',
+      d: 'Alle sechs Monate setzen wir uns gemeinsam zusammen, um zu prüfen, ob wir noch auf dem richtigen Weg sind oder die Unterstützung anpassen müssen.',
+    },
+    {
+      t: 'Datenschutz',
+      d: 'Alle gesundheitlichen und persönlichen Daten behandeln wir mit höchster Sensibilität gemäß DSGVO — in sicheren digitalen Akten.',
+    },
+  ]
+  return (
+    <section className="section section--sunken" id="qualitaet">
+      <div className="section__inner">
+        <div className="section__head">
+          <div className="eyebrow section__eyebrow">Qualität</div>
+          <h2>Sicherheit und Transparenz — fest verankert.</h2>
+          <p className="section__lead">
+            Wir lassen Qualität nicht dem Zufall überlassen, sondern haben sie in unseren Abläufen verankert.
+          </p>
+        </div>
+        <div className="qualitaet-grid">
+          {items.map((it, i) => (
+            <div className="qualitaet-item" key={i}>
+              <h3>{it.t}</h3>
+              <p>{it.d}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -59,64 +182,27 @@ export function Teams() {
   return (
     <section className="section" id="team">
       <div className="section__inner">
-        <div className="section__head">
-          <div className="eyebrow section__eyebrow">Teams</div>
-          <h2>Zwei Teams, eine Stadt.</h2>
-          <p className="section__lead">
-            Der Rhein ist unsere Grenze. Welches Team Sie begleitet, hängt davon ab, wo Sie wohnen.
-          </p>
-        </div>
-        <div className="teams-map">
+        <div className="two-col" style={{ alignItems: 'center' }}>
+          <div>
+            <div className="eyebrow section__eyebrow">Teams</div>
+            <h2>Zwei Teams in ganz Köln.</h2>
+            <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--bw-ink-2)', maxWidth: 'none' }}>
+              Unsere 16 Mitarbeiter:innen arbeiten in zwei regionalen Teams — links und rechts des Rheins.
+              Welches Team Sie begleitet, hängt davon ab, wo Sie wohnen.
+            </p>
+            <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--bw-ink-2)', maxWidth: 'none' }}>
+              Die fachliche Verantwortung liegt bei{' '}
+              <strong>Joris Wolf</strong> (Gesamtleitung, betriebswirtschaftlich) und{' '}
+              <strong>Simon Zachowski</strong> (Gesamtleitung, pädagogisch).
+            </p>
+          </div>
           <figure className="teams-map__figure">
             <img
-              src="/koeln-teams-map.svg"
-              alt="Stadtgebiet Köln, aufgeteilt in Team West (linksrheinisch) und Team Ost (rechtsrheinisch)"
+              src="/bewo-imflow/koeln-teams-map.svg"
+              alt="Stadtgebiet Köln mit Team West und Team Ost"
             />
             <figcaption>Abdeckung BeWo imflow · Stadtgebiet Köln</figcaption>
           </figure>
-          <div className="teams-map__list">
-            <div className="teams-map__team">
-              <div className="label">
-                <span className="dot" />
-                Team West · linksrheinisch
-              </div>
-              <h3>Innenstadt, Ehrenfeld, Sülz, Lindenthal, Nippes, Rodenkirchen</h3>
-              <p>8 Kolleg:innen · Sozialarbeit, Heilerziehungspflege, Sozialpädagogik.</p>
-              <div className="veedel">
-                <span>Innenstadt</span>
-                <span>Ehrenfeld</span>
-                <span>Sülz</span>
-                <span>Lindenthal</span>
-                <span>Nippes</span>
-                <span>Rodenkirchen</span>
-              </div>
-              <div className="person">
-                <div className="avatar">JW</div>
-                <div><strong>Joris Wolf</strong> · Gesamtleitung, betriebswirtschaftlich</div>
-              </div>
-            </div>
-            <div className="teams-map__team team--ost">
-              <div className="label">
-                <span className="dot" />
-                Team Ost · rechtsrheinisch
-              </div>
-              <h3>Deutz, Mülheim, Buchforst, Kalk, Humboldt, Porz, Dellbrück</h3>
-              <p>7 Kolleg:innen · Sozialarbeit, Heilerziehungspflege, Sozialpädagogik.</p>
-              <div className="veedel">
-                <span>Deutz</span>
-                <span>Mülheim</span>
-                <span>Buchforst</span>
-                <span>Kalk</span>
-                <span>Humboldt</span>
-                <span>Porz</span>
-                <span>Dellbrück</span>
-              </div>
-              <div className="person">
-                <div className="avatar">SZ</div>
-                <div><strong>Simon Zachowski</strong> · Leitung Ost, pädagogisch</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -130,17 +216,33 @@ export function Karriere() {
     { t: 'Werkstudent:in Verwaltung', team: 'Köln', umfang: '10–15 h', typ: 'befristet' },
   ]
   return (
-    <section className="section section--sunken" id="karriere">
+    <section className="section" id="karriere">
       <div className="section__inner">
         <div className="section__head">
           <div className="eyebrow section__eyebrow">Karriere</div>
-          <h2>Im Team Ost ist eine Stelle frei.</h2>
+          <h2>Verstärken Sie unser Team.</h2>
           <p className="section__lead">
-            Wir freuen uns auf Bewerbungen von Sozialarbeiter:innen, Heilerziehungspfleger:innen und Sozialpädagog:innen.
-            Schreiben Sie uns auch gerne ohne konkrete Ausschreibung.
+            Als Fachkraft im Ambulant Betreuten Wohnen bewegen Sie sich im gesamten Einzugsgebiet Köln.
+            Wir bieten Strukturen, die gute soziale Arbeit erst möglich machen.
           </p>
         </div>
-        <div className="jobs">
+
+        <div className="karriere-benefits">
+          <div className="karriere-benefit">
+            <h4>Flexible Arbeitszeiten</h4>
+            <p>Kernarbeitszeiten Mo–Fr, 8–18 Uhr. Keine Schicht- oder Wochenenddienste — für eine gute Vereinbarkeit von Beruf und Privatleben.</p>
+          </div>
+          <div className="karriere-benefit">
+            <h4>Teamkultur & Standards</h4>
+            <p>Informationsgespräche führen wir im Tandem durch. Hilfepläne werden systematisch im Vier-Augen-Prinzip gegengelesen — niemand trägt Verantwortung allein.</p>
+          </div>
+          <div className="karriere-benefit">
+            <h4>Moderne Ausstattung</h4>
+            <p>Cloudbasierte, sichere Online-Plattform für Dokumentation und Hilfeplanung. Eine starke Verwaltung hält Ihnen für die pädagogische Arbeit den Rücken frei.</p>
+          </div>
+        </div>
+
+        <div className="jobs" style={{ marginTop: 48 }}>
           {jobs.map((j, i) => (
             <div className="job" key={i}>
               <div className="job__title">
@@ -193,7 +295,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div>
-          <img src="/logo.svg" alt="BeWo imflow" style={{ height: 32, marginBottom: 16 }} />
+          <img src="/bewo-imflow/logo.svg" alt="BeWo imflow" style={{ height: 32, marginBottom: 16 }} />
           <p style={{ fontSize: 14, color: 'var(--bw-ink-2)', maxWidth: 'none', margin: 0, lineHeight: 1.6 }}>
             Ambulant Betreutes Wohnen<br />
             Adalbertstraße 11–15<br />
@@ -204,7 +306,8 @@ export function Footer() {
           <h5>Angebot</h5>
           <ul>
             <li><a href="#leistungen">Leistungen</a></li>
-            <li><a href="#team">Teams</a></li>
+            <li><a href="#aufnahme">Aufnahme</a></li>
+            <li><a href="#ueberuns">Über uns</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </div>

@@ -2,7 +2,8 @@ export function Header({ active, onNav }) {
   const items = [
     { id: 'home', label: 'Start' },
     { id: 'leistungen', label: 'Leistungen' },
-    { id: 'team', label: 'Team' },
+    { id: 'aufnahme', label: 'Aufnahme' },
+    { id: 'ueberuns', label: 'Über uns' },
     { id: 'karriere', label: 'Karriere' },
     { id: 'kontakt', label: 'Kontakt' },
   ]
@@ -14,7 +15,7 @@ export function Header({ active, onNav }) {
           className="site-header__logo"
           onClick={(e) => { e.preventDefault(); onNav('home') }}
         >
-          <img src="/logo.svg" alt="BeWo imflow" />
+          <img src="/bewo-imflow/logo.svg" alt="BeWo imflow" />
         </a>
         <nav className="site-nav">
           {items.map((it) => (
