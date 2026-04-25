@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Radien & Schatten</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px 24px; background: var(--bw-paper); display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .group h6 { margin: 0 0 10px 0; }
+  .row { display: flex; gap: 10px; align-items: flex-end; }
+  .tile { width: 64px; height: 56px; background: #fff; border: 1px solid var(--bw-line); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; font-family: var(--font-mono); font-size: 10px; color: var(--bw-mute); }
+  .sh { width: 92px; height: 56px; background: #fff; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; font-family: var(--font-mono); font-size: 10px; color: var(--bw-mute); }
+</style></head>
+<body>
+  <div class="group">
+    <h6>Radien</h6>
+    <div class="row">
+      <div class="tile" style="border-radius:2px">2</div>
+      <div class="tile" style="border-radius:4px">4</div>
+      <div class="tile" style="border-radius:8px">8</div>
+      <div class="tile" style="border-radius:12px">12</div>
+      <div class="tile" style="border-radius:999px">pill</div>
+    </div>
+  </div>
+  <div class="group">
+    <h6>Schatten</h6>
+    <div class="row">
+      <div class="sh" style="box-shadow: var(--shadow-1)">1</div>
+      <div class="sh" style="box-shadow: var(--shadow-2)">2</div>
+      <div class="sh" style="box-shadow: var(--shadow-3)">3</div>
+    </div>
+  </div>
+</body></html>

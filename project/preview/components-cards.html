@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Cards</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 18px; background: var(--bw-paper); display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: #fff; border: 1px solid var(--bw-line); border-radius: 8px; padding: 18px 20px; box-shadow: var(--shadow-1); }
+  .card.hover { box-shadow: var(--shadow-2); border-color: var(--bw-line-strong); }
+  .card.brand { background: var(--bw-strom-800); color: var(--bw-paper); border-color: transparent; }
+  .card.brand h4 { color: inherit; }
+  .card h4 { margin: 0 0 4px 0; font-size: 16px; }
+  .card p { margin: 0; font-size: 13px; line-height: 1.55; color: var(--bw-ink-2); max-width: none; }
+  .card.brand p { color: rgba(246, 242, 236, 0.78); }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: var(--bw-mute); margin-bottom: 6px; }
+  .card.brand .meta { color: rgba(246,242,236,0.55); }
+</style></head>
+<body>
+  <div class="card"><div class="meta">Standard · shadow‑1</div><h4>Team Ost</h4><p>Köln rechtsrheinisch. Standort Mülheim, Buchforst, Kalk. 7 Mitarbeiter:innen.</p></div>
+  <div class="card hover"><div class="meta">Hover · shadow‑2</div><h4>Team West</h4><p>Köln linksrheinisch. Standort Innenstadt, Ehrenfeld, Sülz. 8 Mitarbeiter:innen.</p></div>
+  <div class="card" style="grid-column: 1 / -1; padding: 16px 20px;"><div class="meta">Listeneintrag</div><h4 style="font-size:14px">Erstgespräch vereinbaren</h4><p>Wir melden uns innerhalb von zwei Werktagen.</p></div>
+  <div class="card brand" style="grid-column: 1 / -1"><div class="meta">Markenträger‑Karte (sparsam)</div><h4>Sie haben eine Frage?</h4><p>Rufen Sie uns an: 0221 29 49 29 16 · Mo–Fr 9–17 Uhr</p></div>
+</body></html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: var(--bw-mute); width: 60px; }
+  .btn { font-family: var(--font-sans); font-size: 14px; font-weight: 500; padding: 10px 18px; border-radius: 4px; border: 1px solid transparent; cursor: pointer; line-height: 1; transition: background 120ms ease, color 120ms ease, border-color 120ms ease; }
+  .btn-primary { background: var(--bw-strom-800); color: var(--bw-paper); }
+  .btn-primary:hover { background: var(--bw-strom-700); }
+  .btn-primary:active { background: var(--bw-strom-900); }
+  .btn-secondary { background: transparent; color: var(--bw-strom-800); border-color: var(--bw-line-strong); }
+  .btn-secondary:hover { background: var(--bw-paper-2); border-color: var(--bw-strom-700); }
+  .btn-ghost { background: transparent; color: var(--bw-strom-800); }
+  .btn-ghost:hover { background: var(--bw-paper-2); }
+  .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+</style></head>
+<body>
+  <div class="row"><div class="meta">Primary</div><button class="btn btn-primary">Termin anfragen</button><button class="btn btn-primary" disabled>Disabled</button></div>
+  <div class="row"><div class="meta">Secondary</div><button class="btn btn-secondary">Mehr erfahren</button><button class="btn btn-secondary" disabled>Disabled</button></div>
+  <div class="row"><div class="meta">Ghost</div><button class="btn btn-ghost">Abbrechen</button><a href="#" style="margin-left:8px">Standard‑Link →</a></div>
+</body></html>

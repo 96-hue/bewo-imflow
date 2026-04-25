@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="BeWo imflow">
+  <g fill="none" stroke="#1E3F3D" stroke-width="3" stroke-linecap="round">
+    <path d="M14 44 C 24 28, 36 28, 46 44 S 68 60, 78 44"></path>
+    <path d="M14 56 C 24 40, 36 40, 46 56 S 68 72, 78 56" opacity="0.35"></path>
+  </g>
+  <g font-family="Inter, Helvetica, Arial, sans-serif" fill="#1E3F3D">
+    <text x="100" y="52" font-size="34" font-weight="600" letter-spacing="-0.01em">BeWo</text>
+    <text x="206" y="52" font-size="34" font-weight="400" letter-spacing="-0.005em" fill="#4C5352">imflow</text>
+  </g>
+</svg>

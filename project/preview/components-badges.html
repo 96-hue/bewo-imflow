@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Badges</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+  .b { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 999px; }
+  .b.ok { background: var(--bw-ok-bg); color: var(--bw-ok); }
+  .b.warn { background: var(--bw-warn-bg); color: var(--bw-warn); }
+  .b.err { background: var(--bw-error-bg); color: var(--bw-error); }
+  .b.info { background: var(--bw-strom-100); color: var(--bw-strom-800); }
+  .b.neutral { background: var(--bw-paper-2); color: var(--bw-ink-2); border: 1px solid var(--bw-line); }
+  .b.outline { background: transparent; color: var(--bw-strom-800); border: 1px solid var(--bw-strom-700); }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+</style></head>
+<body>
+  <span class="b ok"><span class="dot"></span>Aktiv</span>
+  <span class="b info">Team Ost</span>
+  <span class="b info">Team West</span>
+  <span class="b neutral">Köln</span>
+  <span class="b outline">SGB IX</span>
+  <span class="b warn">Wartet auf LVR</span>
+  <span class="b err">Frist überschritten</span>
+  <span class="b neutral">unbefristet</span>
+  <span class="b neutral">Vollzeit</span>
+  <span class="b neutral">Teilzeit</span>
+</body></html>

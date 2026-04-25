@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Form fields</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; color: var(--bw-ink); }
+  .hint { font-size: 12px; color: var(--bw-mute); margin-top: 4px; }
+  .field { display: block; width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--bw-line-strong); border-radius: 4px; background: #fff; font: inherit; color: var(--bw-ink); }
+  .field:focus { outline: none; border-color: var(--bw-strom-700); box-shadow: 0 0 0 3px rgba(198,138,44,0.35); }
+  .field.error { border-color: var(--bw-error); }
+  .err { font-size: 12px; color: var(--bw-error); margin-top: 4px; }
+  textarea.field { min-height: 60px; resize: vertical; font-family: inherit; }
+</style></head>
+<body>
+  <div>
+    <label for="a">Name</label>
+    <input id="a" class="field" value="Anna Müller">
+    <div class="hint">Wie sollen wir Sie ansprechen?</div>
+  </div>
+  <div>
+    <label for="b">Telefon</label>
+    <input id="b" class="field error" value="0221 29 49">
+    <div class="err">Bitte vollständige Nummer eingeben.</div>
+  </div>
+  <div style="grid-column: 1 / -1">
+    <label for="c">Ihre Anfrage</label>
+    <textarea id="c" class="field" placeholder="Worum geht es?"></textarea>
+  </div>
+</body></html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Logo</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px 24px; background: var(--bw-paper); display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 18px; align-items: center; }
+  .dark { background: var(--bw-strom-800); padding: 16px 20px; border-radius: 8px; flex: 1; display: flex; align-items: center; justify-content: center; }
+  .light { background: #fff; padding: 16px 20px; border-radius: 8px; flex: 1; display: flex; align-items: center; justify-content: center; border: 1px solid var(--bw-line); }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: var(--bw-mute); }
+</style></head>
+<body>
+  <div class="row">
+    <div class="light"><img src="../assets/logo.svg" width="240" alt=""></div>
+    <div class="dark"><img src="../assets/logo-light.svg" width="240" alt=""></div>
+  </div>
+  <div class="row" style="align-items: center; gap: 24px;">
+    <img src="../assets/logomark.svg" width="64" height="64" alt="">
+    <img src="../assets/favicon.svg" width="32" height="32" alt="">
+    <div class="meta">Bildmarke 64px · Favicon 32px · Wellenlinie als Symbol für „im Fluss“ — Kontinuität, Begleitung.</div>
+  </div>
+</body></html>

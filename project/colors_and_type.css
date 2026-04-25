@@ -1,0 +1,242 @@
+/* =============================================================
+   BeWo imflow — Design Tokens
+   Colors, type, spacing, radii, shadows.
+   ============================================================= */
+
+/* -------- Fonts -------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap");
+
+:root {
+  /* =========================================================
+     COLOR — Primary palette: "Strom" (chosen)
+     Warm sandstone paper, deep petrol/slate primary,
+     calm sage accent, warm terracotta as rare secondary.
+     Print- and screen-safe, WCAG AA.
+     ========================================================= */
+
+  /* Neutrals — warm sandstone paper, warm greys */
+  --bw-paper:        #F6F2EC;  /* page background, warm sandstone */
+  --bw-paper-2:      #ECE7DD;  /* secondary surface */
+  --bw-line:         #DAD3C4;  /* hairline / divider */
+  --bw-line-strong:  #B5AD9C;  /* stronger border */
+  --bw-mute:         #8A8474;  /* tertiary text */
+  --bw-ink-2:        #4C5352;  /* secondary text (warm slate) */
+  --bw-ink:          #2A2A28;  /* primary text */
+  --bw-white:        #FFFFFF;
+
+  /* Brand — deep petrol/slate-teal ("Strom") */
+  --bw-strom-900:    #12302E;
+  --bw-strom-800:    #1E3F3D;  /* primary brand — petrol */
+  --bw-strom-700:    #2B524F;
+  --bw-strom-600:    #3C6663;
+  --bw-strom-500:    #5A8380;  /* hover / lighter petrol */
+  --bw-strom-100:    #D4DEDC;  /* tinted backgrounds */
+  --bw-strom-50:     #E5ECEA;
+
+  /* Accent — calm sage ("Ufer") */
+  --bw-ufer-700:     #6A7A4A;
+  --bw-ufer-600:     #82935F;  /* primary accent (sage) */
+  --bw-ufer-500:     #A5B387;
+  --bw-ufer-100:     #DFE5CE;
+  --bw-ufer-50:      #EBEFDD;
+
+  /* Warm secondary — terracotta ("Ziegel"), used VERY sparingly */
+  --bw-ziegel-700:   #8C4A36;
+  --bw-ziegel-600:   #A45A44;
+  --bw-ziegel-100:   #EFD9CF;
+
+  /* Semantic */
+  --bw-ok:           #4A7A4F;
+  --bw-ok-bg:        #DFE8D6;
+  --bw-warn:         #9A6B1E;
+  --bw-warn-bg:      #F1DDBD;
+  --bw-error:        #8A3A2F;
+  --bw-error-bg:     #F0D4C9;
+  --bw-info:         var(--bw-strom-700);
+  --bw-info-bg:      var(--bw-strom-100);
+
+  /* Focus */
+  --bw-focus:        #B57A2A; /* warm amber, AA contrast on paper */
+  --bw-focus-ring:   0 0 0 3px rgba(181, 122, 42, 0.40);
+
+  /* =========================================================
+     SEMANTIC TOKENS (use these in product code)
+     ========================================================= */
+  --color-bg:           var(--bw-paper);
+  --color-bg-elev:      var(--bw-white);
+  --color-bg-sunken:    var(--bw-paper-2);
+  --color-bg-brand:     var(--bw-strom-800);
+  --color-bg-brand-soft:var(--bw-strom-50);
+
+  --color-fg:           var(--bw-ink);
+  --color-fg-2:         var(--bw-ink-2);
+  --color-fg-mute:      var(--bw-mute);
+  --color-fg-on-brand:  var(--bw-paper);
+
+  --color-border:       var(--bw-line);
+  --color-border-strong:var(--bw-line-strong);
+
+  --color-accent:       var(--bw-strom-800);
+  --color-accent-hover: var(--bw-strom-700);
+  --color-accent-press: var(--bw-strom-900);
+  --color-link:         var(--bw-strom-700);
+  --color-link-hover:   var(--bw-strom-900);
+
+  /* =========================================================
+     TYPE
+     Inter for UI/body (open source, excellent ä/ö/ü/ß/Eszett)
+     Source Serif 4 as quiet editorial accent for headlines
+     ========================================================= */
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Type scale — modest, generous leading for long-form German */
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-30: 1.875rem;
+  --fs-36: 2.25rem;
+  --fs-48: 3rem;
+  --fs-60: 3.75rem;
+
+  --lh-tight:  1.15;
+  --lh-snug:   1.3;
+  --lh-normal: 1.55;
+  --lh-loose:  1.7;
+
+  --tracking-tight:  -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;
+
+  /* =========================================================
+     SPACING — 4px base
+     ========================================================= */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --sp-32: 128px;
+
+  /* =========================================================
+     RADII — restrained. Cards 4px, pills 999.
+     ========================================================= */
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 8px;
+  --radius-4: 12px;
+  --radius-pill: 999px;
+
+  /* =========================================================
+     SHADOWS — subtle, warm-toned
+     ========================================================= */
+  --shadow-1: 0 1px 2px rgba(43, 42, 34, 0.07), 0 1px 1px rgba(43, 42, 34, 0.05);
+  --shadow-2: 0 2px 6px rgba(43, 42, 34, 0.08), 0 1px 2px rgba(43, 42, 34, 0.05);
+  --shadow-3: 0 8px 24px rgba(43, 42, 34, 0.10), 0 2px 6px rgba(43, 42, 34, 0.06);
+  --shadow-inset: inset 0 0 0 1px var(--bw-line);
+
+  /* Layout */
+  --container-max: 1140px;
+  --container-prose: 680px;
+  --container-narrow: 520px;
+}
+
+/* =============================================================
+   BASE / SEMANTIC ELEMENTS
+   ============================================================= */
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  font-feature-settings: "ss01", "cv11"; /* Inter: humanist 'a', friendlier 'l' */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headlines — Inter for hard-working UI; Source Serif on dedicated editorial moments via .h-serif */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--sp-4) 0;
+  color: var(--color-fg);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+}
+h1 { font-size: var(--fs-48); font-weight: 600; }
+h2 { font-size: var(--fs-36); }
+h3 { font-size: var(--fs-24); font-weight: 600; }
+h4 { font-size: var(--fs-20); font-weight: 600; letter-spacing: 0; }
+h5 { font-size: var(--fs-16); font-weight: 600; letter-spacing: 0; }
+h6 {
+  font-size: var(--fs-12);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-fg-mute);
+}
+
+/* Editorial / quiet accent variant for headlines */
+.h-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+p {
+  margin: 0 0 var(--sp-4) 0;
+  line-height: var(--lh-loose); /* generous leading for long German texts */
+  text-wrap: pretty;
+  max-width: var(--container-prose);
+}
+.lead {
+  font-size: var(--fs-20);
+  line-height: var(--lh-normal);
+  color: var(--color-fg-2);
+}
+small, .small { font-size: var(--fs-14); color: var(--color-fg-2); }
+.eyebrow {
+  font-size: var(--fs-12);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-fg-mute);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--color-link) 40%, transparent);
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+a:hover { color: var(--color-link-hover); text-decoration-color: currentColor; }
+a:focus-visible {
+  outline: none;
+  box-shadow: var(--bw-focus-ring);
+  border-radius: 2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: var(--sp-8) 0;
+}
+
+::selection { background: var(--bw-strom-100); color: var(--bw-strom-900); }

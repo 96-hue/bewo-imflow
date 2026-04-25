@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Semantische Farben</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 20px; }
+  .row { display:grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .item { border: 1px solid var(--bw-line); border-radius: 6px; overflow: hidden; }
+  .bar { height: 8px; }
+  .body { padding: 10px 12px; background: #fff; }
+  .label { font-weight: 600; font-size: 13px; }
+  .ex { font-size: 12px; color: var(--bw-ink-2); margin-top: 4px; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; margin-top: 6px; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="item">
+      <div class="bar" style="background:#4A7A4F"></div>
+      <div class="body"><div class="label">OK · Erfolg</div><div class="ex">Bestätigungen, „gespeichert“</div><span class="pill" style="background:#E2EBDF;color:#4A7A4F">Termin bestätigt</span></div>
+    </div>
+    <div class="item">
+      <div class="bar" style="background:#9A6B1E"></div>
+      <div class="body"><div class="label">Warn · Hinweis</div><div class="ex">nicht‑blockierender Hinweis</div><span class="pill" style="background:#F4E7CC;color:#9A6B1E">Bitte prüfen</span></div>
+    </div>
+    <div class="item">
+      <div class="bar" style="background:#8A3A2F"></div>
+      <div class="body"><div class="label">Error</div><div class="ex">Fehler, Validierung</div><span class="pill" style="background:#F1D9D2;color:#8A3A2F">Eingabe fehlt</span></div>
+    </div>
+    <div class="item">
+      <div class="bar" style="background:#2B524F"></div>
+      <div class="body"><div class="label">Info</div><div class="ex">Hinweise, Markenkontext</div><span class="pill" style="background:#D4DEDC;color:#2B524F">Neu seit 04/26</span></div>
+    </div>
+  </div>
+</body></html>
